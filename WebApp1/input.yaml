@@ -2,6 +2,6 @@ App:
   repo: dotnet
   App_name: dotnet
   Comp_name: WebApp1
-  solution_file: 'C:\Program Files (x86)\Jenkins\workspace\DotNet\dotnet\WebApp1\WebApplication1.sln'
-  project_file: 'C:\Program Files (x86)\Jenkins\workspace\DotNet\dotnet\WebApp1\WebApplication1.sln'
+  solution_file: 'C:\Program Files (x86)\Jenkins\workspace\DotNet\dotnet\WebApp1\WebApp1.sln'
+  project_file: 'C:\Program Files (x86)\Jenkins\workspace\DotNet\dotnet\WebApp1\WebApp1.sln'
   
