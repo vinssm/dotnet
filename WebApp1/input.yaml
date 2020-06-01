@@ -1,7 +1,7 @@
 App:
-  repo: AppDemo
-  App_name: NewSampleApplication
-  Comp_name: WebApplication1
-  solution_file: 'C:\Program Files (x86)\Jenkins\workspace\AppDemo\NewSampleApplication\WebApplication1.sln'
-  project_file: 'C:\Program Files (x86)\Jenkins\workspace\AppDemo\NewSampleApplication\WebApplication1.sln'
+  repo: dotnet
+  App_name: dotnet
+  Comp_name: WebApp1
+  solution_file: 'C:\Program Files (x86)\Jenkins\workspace\DotNet\dotnet\WebApp1\WebApplication1.sln'
+  project_file: 'C:\Program Files (x86)\Jenkins\workspace\DotNet\dotnet\WebApp1\WebApplication1.sln'
   

@@ -75,7 +75,7 @@ pipeline {
         agent { label "${AgentName}"  }
 			steps {
 				script {
-					Component_details = readYaml file: 'NewSampleApplication\\input.yaml'
+					Component_details = readYaml file: 'WebApp1\\input.yaml'
 					env.AppName= "${Component_details.App.App_name}"
 					env.CompName= "${Component_details.App.Comp_name}"
 					env.project_file= "${Component_details.App.project_file}"
