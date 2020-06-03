@@ -95,7 +95,31 @@ pipeline {
 	}
 }
 
+	stage('create_package') {
+        agent { label "${AgentName}"  }
+			steps {
+				script {
+					// Component_details = readYaml file: 'WebApp1\\input.yaml'
+					env.AppName= "${Component_details.App.App_name}"
+					env.CompName= "${Component_details.App.Comp_name}"
+					env.published_path= "${Component_details.App.published}" 
+					// env.project_file= "${Component_details.App.project_file}"
+					//for (String item : build_file.split() ) {
+					//	env.project_file=item
+						echo "These parameters are required to Copy the Build Output to NAS"
+						echo "##### ${AppName}     ######################"
+						echo "##### ${CompName}     ######################"
+						echo "##### ${published_path}  ######################"
+						echo "##### ${CommitNumber}  ######################"
+						echo "========================================================================="
+					util.create_package(WORKSPACE,project_file)
+					
 
+				}
+			}
+		}
+	}
+}
 
 	  /*  stage('Run the Unit Tests') {
 	    	steps {
