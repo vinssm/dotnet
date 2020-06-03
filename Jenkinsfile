@@ -92,8 +92,7 @@ pipeline {
 				}
 			}
 		}
-	}
-}
+
 
 	stage('create_package') {
         agent { label "${AgentName}"  }
@@ -120,6 +119,7 @@ pipeline {
 		}
 	}
 }
+
 
 	  /*  stage('Run the Unit Tests') {
 	    	steps {
