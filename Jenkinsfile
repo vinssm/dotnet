@@ -117,7 +117,7 @@ pipeline {
 						env.DLL_path= "${WORKSPACE}\\${Output}"
 						echo "@@@@@@@@@@@@@@@@@ Build Output Location: ${DLL_path}"
 						echo "========================================================================="
-					util.create_package(WORKSPACE,project_file)
+					util.create_package(WORKSPACE,project_file,Output)
 					
 
 				}
