@@ -114,7 +114,7 @@ pipeline {
 						echo "##### ${project_file}  ######################"
 						echo "##### ${published_path}  ######################"
 						// echo "##### ${CommitNumber}  ######################"
-						env.published_path= "${WORKSPACE}\\${published}"
+						env.published_path= "${WORKSPACE}\\${published_path}"
 						echo "@@@@@@@@@@@@@@@@@ Build Output Location: ${published_path}"
 						echo "========================================================================="
 					util.create_package(WORKSPACE,project_file,output)
