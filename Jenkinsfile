@@ -114,10 +114,10 @@ pipeline {
 						echo "##### ${project_file}  ######################"
 						echo "##### ${published_path}  ######################"
 						// echo "##### ${CommitNumber}  ######################"
-						env.DLL_path= "${WORKSPACE}\\${Output}"
-						echo "@@@@@@@@@@@@@@@@@ Build Output Location: ${DLL_path}"
+						env.published_path= "${WORKSPACE}\\${output}"
+						echo "@@@@@@@@@@@@@@@@@ Build Output Location: ${published_path}"
 						echo "========================================================================="
-					util.create_package(WORKSPACE,project_file,Output)
+					util.create_package(WORKSPACE,project_file,output)
 					
 
 				}
