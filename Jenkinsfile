@@ -103,7 +103,6 @@ pipeline {
 					env.CompName= "${Component_details.App.Comp_name}"
 					// env.published_path= "${Component_details.App.published}" 
 					env.project_file= "${Component_details.App.project_file}"
-					env.ITEM_ROOTDIR= "${buildsDir}"
 					//for (String item : build_file.split() ) {
 					//	env.project_file=item
 						echo "These parameters are required to Copy the Build Output to NAS"
@@ -112,7 +111,6 @@ pipeline {
 						echo "##### ${BUILD_NUMBER}  ######################"
 						echo "##### ${WORKSPACE}     ######################"
 						echo "##### ${project_file}  ######################"
-						echo "=============== ${ITEM_ROOTDIR} ================"
 						// echo "##### ${published_path}  ######################"
 						// echo "##### ${CommitNumber}  ######################"
 						echo "========================================================================="
